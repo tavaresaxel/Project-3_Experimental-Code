@@ -25,6 +25,7 @@ import auth from '../utils/auth';
 //   );
 // };
 
+
 const DepartmentList = ({ departments, onReassign }) => {
   const { loading, data} = useQuery(GET_ALL_EMPLOYEES);
   const [employees, setEmployees] = useState([]);
