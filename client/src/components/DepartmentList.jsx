@@ -47,6 +47,7 @@ const DepartmentList = ({ departments, onReassign }) => {
             <th>Employee Name</th>
             <th>Employee Email</th>
             <th>Department</th>
+            <th>Shift</th>
             <th>Reassign</th>
             <th>Terminate Employee</th>
           </tr>
@@ -57,6 +58,7 @@ const DepartmentList = ({ departments, onReassign }) => {
                   <td>{employee.name}</td>
                   <td>{employee.email}</td>
                   <td>{employee.department.name}</td>
+                  <td>{employee.shift}</td>
                   {/* <td><button onClick={() => onReassign(employee._id, employee.department._id)}>Reassign</button></td> */}
                   <td>
                     <Dropdown>
