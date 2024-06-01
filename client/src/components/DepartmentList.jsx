@@ -25,7 +25,6 @@ import auth from '../utils/auth';
 //   );
 // };
 
-
 const DepartmentList = ({ departments, onReassign }) => {
   const { loading, data} = useQuery(GET_ALL_EMPLOYEES);
   const [employees, setEmployees] = useState([]);
@@ -38,7 +37,7 @@ const DepartmentList = ({ departments, onReassign }) => {
     return <h2>Loading...</h2>
   }
   if(!auth.loggedIn()) {
-    return <h2>Please Log In.</h2>
+    return <h2 className='text-center'>Please Log In.</h2>
   }
   return (
     <div>
