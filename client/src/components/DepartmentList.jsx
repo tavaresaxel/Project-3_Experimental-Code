@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { useQuery } from '@apollo/client';
 import { GET_ALL_EMPLOYEES } from '../utils/queries';
+import { DELETE_EMPLOYEE } from '../utils/mutations';
 import auth from '../utils/auth';
 
 // const DepartmentList = ({ departments, onReassign }) => {
